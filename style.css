@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  border-left: 4px solid #C0304F;
+  font-size: 2rem;
+}
+
+nav .bag-number {
+  height: 1.4rem;
+  width: 1.4rem;
+  background-color: #C0304F;
+  border-radius: 50%;
+  top: -0.625rem;
+  right: -1.25rem;
+}
+
+.ministry-section .ministry-cards > div > div {
+  background-color: #FFE6E0;
+  border-radius: 2rem 2rem 2rem 0;
+}
+.ministry-section .img-bg-circle {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+.ministry-section .ministry-arrow {
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: #C0304F;
+  color: white;
+}
+
+.events-section .events-calander {
+  height: 2.5rem;
+  width: 3rem;
+  background-color: black;
+  border-radius: 0.5rem 0.5rem 0 0;
+  left: 1.2rem;
+  bottom: 0.1rem;
+}
+.events-section .events-common button {
+  color: white;
+  background-color: black;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+.events-section .next-events > span {
+  height: 1.8rem;
+  width: 2rem;
+  border-radius: 0.2rem;
+}
+.events-section .next-events > span:first-child {
+  color: white;
+  background-color: #C0304F;
+}
+
+.footer-section {
+  background-image: url("./images/footer/footer.png");
+  background-size: cover;
+}
+.footer-section hr {
+  color: #929292;
+}
+.footer-section .footer-logo-text > p {
+  color: #929292;
+  font-size: 0.9rem;
+}
+.footer-section .footer-links-form .footer-field {
+  font-size: 0.9rem;
+}
+.footer-section .footer-links-form a {
+  color: #929292;
+  font-size: 0.68rem;
+}
+.footer-section .footer-links-form .footer-form > p:nth-child(2) {
+  font-size: 0.9rem;
+  color: #929292;
+}
+.footer-section .footer-links-form .footer-form input {
+  border-radius: 0.5rem;
+  color: #929292;
+  background-color: #2F3032;
+  outline: none;
+}
+.footer-section .footer-links-form .footer-form button {
+  border-radius: 0.5rem;
+  background-color: #C0304F;
+}
+.footer-section .copyright-icons p {
+  color: #929292;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 465px) {
+  .footer-section .footer-logo-text > p {
+    font-size: 1.25rem;
+  }
+  .footer-section .footer-links-form .footer-field {
+    font-size: 1.25rem;
+  }
+  .footer-section .footer-links-form a {
+    font-size: 1.2rem;
+  }
+  .footer-section .footer-links-form .footer-form > p:nth-child(2) {
+    color: #929292;
+    font-size: 1.25rem;
+  }
+  .footer-section .copyright-icons p {
+    color: #929292;
+    font-size: 1.25rem;
+  }
+}/*# sourceMappingURL=style.css.map */

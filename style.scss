@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$ministry-bg-color: #FFE6E0;
+$main-heading-sm-fs: 2rem;
+$main-heading-lg-fs: 3rem;
+$content-text-sm-fs: 0.9rem;
+$content-text-lg-fs: 1.25rem;
+$border-button-color: #C0304F;
+$content-text-color: #747A82;
+$footer-content-color: #929292;
+h2{
+    border-left: 4px solid $border-button-color;
+    font-size: $main-heading-sm-fs;
+}
+nav{
+    .bag-number{
+        height: 1.4rem;
+        width: 1.4rem;
+        background-color: $border-button-color;
+        border-radius: 50%;
+        top: -0.625rem;
+        right: -1.25rem;
+    }
+}
+// MINISTRY SECTION
+.ministry-section {
+    .ministry-cards{
+        >div{
+            >div{
+                background-color: $ministry-bg-color;
+                border-radius: 2rem 2rem 2rem 0;
+            }
+        }
+    }
+    .img-bg-circle{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+    .ministry-arrow {
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 50%;
+        background-color: $border-button-color;
+        color: white;
+    }
+}
+
+
+// EVENTS SECTION
+.events-section {
+    .events-calander {
+        height: 2.5rem;
+        width: 3rem;
+        background-color: black;
+        border-radius: 0.5rem 0.5rem 0 0;
+        left: 1.2rem;
+        bottom: 0.1rem;
+    }
+    .events-common button{
+        color: white;
+        background-color: black;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+    }
+    .next-events{
+        >span{
+            height: 1.8rem;
+            width: 2rem;
+            border-radius: 0.2rem;
+        }
+        >span:first-child{
+            color: white;
+            background-color: $border-button-color;
+        }
+    }
+}
+// FOOTER SECTION
+.footer-section {
+    background-image: url("./images/footer/footer.png");
+    background-size: cover;
+    hr{
+        color: $footer-content-color;
+    }
+    .footer-logo-text>p {
+        color: $footer-content-color;
+        font-size: $content-text-sm-fs;
+    }
+    .footer-links-form {
+        .footer-field {
+            font-size: $content-text-sm-fs;
+        }
+        a{
+            color: $footer-content-color;
+            font-size: 0.68rem;
+        }
+        .footer-form{
+            >p:nth-child(2){
+                font-size: $content-text-sm-fs;
+                color: $footer-content-color;
+            }
+            input{
+                border-radius: 0.5rem;
+                color: $footer-content-color;
+                background-color: #2F3032;
+                outline: none;
+            }
+            button{
+                border-radius: 0.5rem;
+                background-color: $border-button-color;
+            }
+        }
+    }
+    .copyright-icons {
+        p{
+            color: $footer-content-color;
+            font-size: $content-text-sm-fs;
+        }
+    }
+}
+
+@media (min-width: 465px){
+    // FOOTER SECTION
+    .footer-section{
+        .footer-logo-text>p {
+            font-size: $content-text-lg-fs;
+        }
+        .footer-links-form{
+            .footer-field {
+                font-size: $content-text-lg-fs;
+            }
+            a{
+                font-size: 1.2rem;
+            }
+            .footer-form{
+                >p:nth-child(2){
+                    color: $footer-content-color;
+                    font-size: $content-text-lg-fs;
+                }
+            }
+        }
+        .copyright-icons {
+            p{
+                color: $footer-content-color;
+                font-size: $content-text-lg-fs;
+            }
+        }
+    }
+}
