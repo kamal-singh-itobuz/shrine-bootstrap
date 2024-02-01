@@ -132,6 +132,9 @@ nav .nav-item a {
   left: 1.2rem;
   bottom: 0.1rem;
 }
+.events-section .events-common {
+  border-radius: 1rem;
+}
 .events-section .events-common button {
   color: white;
   background-color: black;
@@ -146,6 +149,7 @@ nav .nav-item a {
   height: 1.8rem;
   width: 2rem;
   border-radius: 0.2rem;
+  padding-top: 0.2rem;
 }
 .events-section .next-events > span:first-child {
   color: white;
@@ -207,4 +211,24 @@ nav .nav-item a {
     color: #929292;
     font-size: 1.25rem;
   }
+}
+.home-absolute-img {
+  height: 10rem;
+  width: 10rem;
+  right: 0rem;
+  top: 43rem;
+}
+
+.ministry-absolute-img {
+  height: 15rem;
+  width: 5rem;
+  left: 0rem;
+  top: 60rem;
+}
+
+.events-absolute-img {
+  height: 12rem;
+  width: 15rem;
+  right: 0rem;
+  bottom: 33.5rem;
 }/*# sourceMappingURL=style.css.map */

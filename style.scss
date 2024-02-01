@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto";
 }
+
 $ministry-bg-color: #FFE6E0;
 $main-heading-sm-fs: 2rem;
 $main-heading-lg-fs: 3rem;
@@ -13,15 +15,17 @@ $content-text-lg-fs: 1.25rem;
 $border-button-color: #C0304F;
 $content-text-color: #747A82;
 $footer-content-color: #929292;
-h2{
+
+h2 {
     border-left: 4px solid $border-button-color;
     font-size: $main-heading-sm-fs;
     font-weight: 700;
     font-family: "Poppins";
 }
+
 //NAV SECTION
-nav{
-    .bag-number{
+nav {
+    .bag-number {
         height: 1.4rem;
         width: 1.4rem;
         background-color: $border-button-color;
@@ -29,10 +33,12 @@ nav{
         top: -0.625rem;
         right: -1.25rem;
     }
+
     .navlogo-for-large {
         left: 38%;
         top: 12%;
     }
+
     .nav-hover-lines {
         display: none;
         height: 0.15rem;
@@ -40,23 +46,28 @@ nav{
         background-color: $border-button-color;
         bottom: 0.2rem;
     }
+
     .hover-long-line {
         width: 63%;
         left: 10%;
     }
+
     .hover-short-line {
         width: 15%;
         left: 80%;
     }
+
     .nav-item {
         transition: all 0.8s ease-out;
-        a{
+
+        a {
             color: black;
         }
     }
-    .nav-item:hover{
-        @media (min-width: 992px){
-            .nav-hover-lines{
+
+    .nav-item:hover {
+        @media (min-width: 992px) {
+            .nav-hover-lines {
                 display: inline-block;
             }
         }
@@ -65,10 +76,11 @@ nav{
 
 //HOME PAGES EVENTS
 .home-pages-events {
-    a{
+    a {
         color: black;
     }
-    a:hover{
+
+    a:hover {
         color: #353638;
     }
 }
@@ -76,29 +88,35 @@ nav{
 //HOME SECTION
 .home-section {
     height: 45rem;
-    img{
+
+    img {
         height: 14rem;
     }
 }
-@media (min-width: 576px){
+
+@media (min-width: 576px) {
     .home-section {
         height: 12rem;
-        img{
+
+        img {
             height: unset;
         }
     }
 }
-@media (min-width: 768px){
+
+@media (min-width: 768px) {
     .home-section {
         height: 15rem;
     }
 }
-@media (min-width: 992px){
+
+@media (min-width: 992px) {
     .home-section {
         height: 22rem;
     }
 }
-@media (min-width: 1200px){
+
+@media (min-width: 1200px) {
     .home-section {
         height: 30rem;
     }
@@ -109,23 +127,27 @@ nav{
     p {
         color: $content-text-color;
     }
-    h4{
+
+    h4 {
         font-weight: 600;
-        font-family:'Poppins';
+        font-family: 'Poppins';
     }
-    .ministry-cards{
-        >div{
-            >div{
+
+    .ministry-cards {
+        >div {
+            >div {
                 background-color: $ministry-bg-color;
                 border-radius: 2rem 2rem 2rem 0;
             }
         }
     }
-    .img-bg-circle{
+
+    .img-bg-circle {
         height: 5rem;
         width: 5rem;
         border-radius: 50%;
     }
+
     .ministry-arrow {
         height: 1.5rem;
         width: 1.5rem;
@@ -138,17 +160,20 @@ nav{
 
 // EVENTS SECTION
 .events-section {
-    p{
+    p {
         color: $content-text-color;
     }
-    h4{
+
+    h4 {
         font-weight: 600;
-        font-family:'Poppins';
+        font-family: 'Poppins';
     }
-    .events-date{
+
+    .events-date {
         color: black;
         font-weight: 600;
     }
+
     .events-calander {
         height: 2.5rem;
         width: 3rem;
@@ -157,97 +182,140 @@ nav{
         left: 1.2rem;
         bottom: 0.1rem;
     }
-    .events-common button{
+
+    .events-common {
+        border-radius: 1rem;
+    }
+
+    .events-common button {
         color: white;
         background-color: black;
         font-size: 1rem;
         border-radius: 0.5rem;
         transition: all 0.6s;
-        &:hover{
+
+        &:hover {
             background-color: #3c3e40;
         }
     }
-    .next-events{
-        >span{
+
+    .next-events {
+        >span {
             height: 1.8rem;
             width: 2rem;
             border-radius: 0.2rem;
+            padding-top: 0.2rem;
         }
-        >span:first-child{
+
+        >span:first-child {
             color: white;
             background-color: $border-button-color;
         }
     }
 }
+
 // FOOTER SECTION
 .footer-section {
     background-image: url("./images/footer/footer.png");
     background-size: cover;
-    hr{
+
+    hr {
         color: $footer-content-color;
     }
+
     .footer-logo-text>p {
         color: $footer-content-color;
         font-size: $content-text-sm-fs;
     }
+
     .footer-links-form {
         .footer-field {
             font-size: $content-text-sm-fs;
         }
-        a{
+
+        a {
             color: $footer-content-color;
             font-size: 0.68rem;
         }
-        .footer-form{
-            >p:nth-child(2){
+
+        .footer-form {
+            >p:nth-child(2) {
                 font-size: $content-text-sm-fs;
                 color: $footer-content-color;
             }
-            input{
+
+            input {
                 border-radius: 0.5rem;
                 color: $footer-content-color;
                 background-color: #2F3032;
                 outline: none;
             }
-            button{
+
+            button {
                 border-radius: 0.5rem;
                 background-color: $border-button-color;
             }
         }
     }
+
     .copyright-icons {
-        p{
+        p {
             color: $footer-content-color;
             font-size: $content-text-sm-fs;
         }
     }
 }
 
-@media (min-width: 465px){
-    // FOOTER SECTION
-    .footer-section{
+@media (min-width: 465px) {
+    .footer-section {
         .footer-logo-text>p {
             font-size: $content-text-lg-fs;
         }
-        .footer-links-form{
+
+        .footer-links-form {
             .footer-field {
                 font-size: $content-text-lg-fs;
             }
-            a{
+
+            a {
                 font-size: 1.2rem;
             }
-            .footer-form{
-                >p:nth-child(2){
+
+            .footer-form {
+                >p:nth-child(2) {
                     color: $footer-content-color;
                     font-size: $content-text-lg-fs;
                 }
             }
         }
+
         .copyright-icons {
-            p{
+            p {
                 color: $footer-content-color;
                 font-size: $content-text-lg-fs;
             }
         }
     }
+}
+
+// BODY IMAGES DISTRIBUTED
+.home-absolute-img {
+    height: 10rem;
+    width: 10rem;
+    right: 0rem;
+    top: 43rem;
+}
+
+.ministry-absolute-img {
+    height: 15rem;
+    width: 5rem;
+    left: 0rem;
+    top: 60rem;
+}
+
+.events-absolute-img {
+    height: 12rem;
+    width: 15rem;
+    right: 0rem;
+    bottom: 33.5rem;
 }
