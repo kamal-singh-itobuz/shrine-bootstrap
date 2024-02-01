@@ -1,12 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
 }
 
 h2 {
   border-left: 4px solid #C0304F;
   font-size: 2rem;
+  font-weight: 700;
+  font-family: "Poppins";
 }
 
 nav .bag-number {
@@ -17,7 +21,81 @@ nav .bag-number {
   top: -0.625rem;
   right: -1.25rem;
 }
+nav .navlogo-for-large {
+  left: 38%;
+  top: 12%;
+}
+nav .nav-hover-lines {
+  display: none;
+  height: 0.15rem;
+  border-radius: 0.2rem;
+  background-color: #C0304F;
+  bottom: 0.2rem;
+}
+nav .hover-long-line {
+  width: 63%;
+  left: 10%;
+}
+nav .hover-short-line {
+  width: 15%;
+  left: 80%;
+}
+nav .nav-item {
+  transition: all 0.8s ease-out;
+}
+nav .nav-item a {
+  color: black;
+}
+@media (min-width: 992px) {
+  nav .nav-item:hover .nav-hover-lines {
+    display: inline-block;
+  }
+}
 
+.home-pages-events a {
+  color: black;
+}
+.home-pages-events a:hover {
+  color: #353638;
+}
+
+.home-section {
+  height: 45rem;
+}
+.home-section img {
+  height: 14rem;
+}
+
+@media (min-width: 576px) {
+  .home-section {
+    height: 12rem;
+  }
+  .home-section img {
+    height: unset;
+  }
+}
+@media (min-width: 768px) {
+  .home-section {
+    height: 15rem;
+  }
+}
+@media (min-width: 992px) {
+  .home-section {
+    height: 22rem;
+  }
+}
+@media (min-width: 1200px) {
+  .home-section {
+    height: 30rem;
+  }
+}
+.ministry-section p {
+  color: #747A82;
+}
+.ministry-section h4 {
+  font-weight: 600;
+  font-family: "Poppins";
+}
 .ministry-section .ministry-cards > div > div {
   background-color: #FFE6E0;
   border-radius: 2rem 2rem 2rem 0;
@@ -35,6 +113,17 @@ nav .bag-number {
   color: white;
 }
 
+.events-section p {
+  color: #747A82;
+}
+.events-section h4 {
+  font-weight: 600;
+  font-family: "Poppins";
+}
+.events-section .events-date {
+  color: black;
+  font-weight: 600;
+}
 .events-section .events-calander {
   height: 2.5rem;
   width: 3rem;
@@ -48,6 +137,10 @@ nav .bag-number {
   background-color: black;
   font-size: 1rem;
   border-radius: 0.5rem;
+  transition: all 0.6s;
+}
+.events-section .events-common button:hover {
+  background-color: #3c3e40;
 }
 .events-section .next-events > span {
   height: 1.8rem;
